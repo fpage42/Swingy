@@ -16,9 +16,9 @@ public class ResumeHeroConsole extends ConsoleView {
         System.out.println("    Defense: " + game.getSelectedHero().getDefense());
         System.out.println("    Degats: " + game.getSelectedHero().getAttack());
         System.out.println("Equipement:");
-        System.out.println("    Casque: " + game.getSelectedHero().getHelm().getValue());
-        System.out.println("    Armure: " + game.getSelectedHero().getArmor().getValue());
-        System.out.println("    Arme: " + game.getSelectedHero().getWeapon().getValue());
+        System.out.println("    Casque: " + (this.game.getSelectedHero().getHelm()==null?"0":this.game.getSelectedHero().getHelm().getValue()));
+        System.out.println("    Armure: " + (this.game.getSelectedHero().getArmor()==null?"0":this.game.getSelectedHero().getArmor().getValue()));
+        System.out.println("    Arme: " + (this.game.getSelectedHero().getWeapon()==null?"0":this.game.getSelectedHero().getWeapon().getValue()));
 
         System.out.println("1. Lancer une partie avec ce hero");
         System.out.println("2. Retour");
