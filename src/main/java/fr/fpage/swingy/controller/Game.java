@@ -59,7 +59,7 @@ public class Game {
             if (command.equalsIgnoreCase("window"))
                 this.changeDisplayMode(DisplayMode.WINDOW);
             else if (command.equalsIgnoreCase("quit"))
-                break;
+                System.exit(0);
             else
                 ((ConsoleView)this.activeView).receiveCommand(command);
         }
