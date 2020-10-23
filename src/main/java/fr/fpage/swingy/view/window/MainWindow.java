@@ -23,7 +23,7 @@ public class MainWindow extends JFrame {
         setTitle("Swingy");
         setResizable(false);
         setLocationRelativeTo(null);
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Container panel = this.getContentPane();
         panel.setLayout(new BorderLayout());
         JButton consoleButton = new JButton("Console mode");
