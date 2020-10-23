@@ -66,7 +66,7 @@ public class Villains extends MapObject {
         if (rand < this.map.getHeroMapObject().getHero().getHeroClass().getTouchingChance())
             this.hp -= ((int) (this.map.getHeroMapObject().getHero().getAttack() * this.map.getHeroMapObject().getHero().
                     getHeroClass().getAttackMultiplier()));
-        if (this.hp < 0)
+        if (this.hp <= 0)
         {
             if (this.map.getHeroMapObject().getHero().addExp(100 * this.getLevel()))
                 this.map.getGame().lvlUp();
