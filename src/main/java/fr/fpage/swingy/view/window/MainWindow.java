@@ -19,7 +19,7 @@ public class MainWindow extends JFrame {
     }
 
     private void build() {
-        setSize(960, 640);
+        setSize(480, 320);
         setTitle("Swingy");
         setResizable(false);
         setLocationRelativeTo(null);
